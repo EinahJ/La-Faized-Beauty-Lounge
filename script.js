@@ -1,19 +1,22 @@
+function scrollLeftBy() {
+    const serviceList = document.querySelector('.service-list');
+    serviceList.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollRight() {
+    const serviceList = document.querySelector('.service-list');
+    serviceList.scrollBy({ left: 300, behavior: 'smooth' });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    const reviewHolder = document.querySelector('.review-holder');
-    const scrollLeft = document.querySelector('.scroll-left');
-    const scrollRight = document.querySelector('.scroll-right');
-    
-    scrollLeft.addEventListener('click', function() {
-        reviewHolder.scrollBy({
-            left: -320, // Adjust scroll distance as needed
-            behavior: 'smooth'
-        });
-    });
-    
-    scrollRight.addEventListener('click', function() {
-        reviewHolder.scrollBy({
-            left: 320, // Adjust scroll distance as needed
-            behavior: 'smooth'
-        });
+    document.getElementById('seeMoreButton').addEventListener('click', function() {
+        var hiddenServices = document.getElementById('hiddenServices');
+        if (hiddenServices.style.display === 'none' || hiddenServices.style.display === '') {
+            hiddenServices.style.display = 'block';
+            this.textContent = 'See Less'; // Change button text
+        } else {
+            hiddenServices.style.display = 'none';
+            this.textContent = 'See More'; // Change button text back
+        }
     });
 });
