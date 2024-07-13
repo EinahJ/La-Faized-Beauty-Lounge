@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-nav h1 {
     margin: 0;
     font-family: 'Playfair Display', serif;
+    color: #D36D7E;
 }
 
 nav ul {
@@ -68,7 +69,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #000; /* Change text color on hover */
+    color: #D36D7E;
 }
 
 nav ul li a::after {
@@ -101,8 +102,6 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     color: #000; /* Text color on top of image */
-    padding: 2rem;
-    margin-bottom: 25px;
 }
 
 .intro {
@@ -141,32 +140,39 @@ nav ul li a:hover::after {
 }
 
 button {
-    background-color: #f8b400; /* Gold */
+    background-color: #D36D7E; /* Gold */
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #dda106;
+    background-color: #fcd5ce;
+    color: #666;
 }
 
 #reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    text-align: center; /* Added for centering */
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+.section-heading {
+    text-align: left;
+    margin-bottom: 20px; /* Adjust spacing between heading and cards */
 }
 
 .review-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    /* Additional styling for review cards if needed */
 }
 
 .review-card {
@@ -209,27 +215,79 @@ button:hover {
     margin-right: 2px; /* Adjust spacing between stars */
 }
 
+.h2s {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.h2s::before,
+.h2s::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #D36D7E;
+    margin: 0 10px;
+}
+
+.c2s {
+    font-size: 25px;
+    text-align: left;
+    margin-top: -30px;
+}
+
+.h4s {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.h4s::before,
+.h4s::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+}
+
+.n4s {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.n4s::before,
+.n4s::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #D36D7E;
+    margin: 0 10px;
+}
+
 #services {
     padding: 2rem;
     text-align: center;
     background-color: #f8f8f8;
 }
 
-.service-list {
+.services-wrapper {
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 25px;
+    align-items: center;
 }
 
 .service-item {
     background-color: #fff;
-    border: 1px solid #f8b400; /* Gold */
     width: 300px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 .service-content {
@@ -256,6 +314,7 @@ button:hover {
 
 .service-info h3 {
     margin-top: 0;
+    color: #D36D7E;
 }
 
 .service-info p {
@@ -263,6 +322,124 @@ button:hover {
     color: #666;
     line-height: 1.4;
     text-align: center;
+}
+
+#hiddenServices {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.image {
+    height: 200px;
+}
+
+.text {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #666;
+    text-align: left;
+    background-color: #f1eae9;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image {
+        min-height: 300px;
+    }
+    .text {
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .h4s {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .text {
+        padding: 10px;
+    }
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.service-list {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.service-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.service-item {
+    flex: 0 0 auto; /* Prevent the items from shrinking */
+    margin-right: 1rem; /* Adjust spacing between items */
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Initial faded background */
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.5; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.scroll-btn:hover {
+    opacity: 1; /* Full opacity on hover */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    color: white; /* Ensure text color stays white on hover */
+}
+
+.scroll-btn.left-btn {
+    left: 0;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.scroll-btn.right-btn {
+    right: 0;
+    margin-right: 5px;
+    width: 30px;
+}
+
+.scroll-btn i {
+    font-size: 1.5rem;
 }
 
 footer {
