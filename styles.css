@@ -386,6 +386,11 @@ button:hover {
         color: #000;
     }
 
+    .text-section p {
+        margin: 20px 0;
+        font-size: 13px;
+    }
+
     .home-image p {
         font-size: 13px;
         margin-bottom: 1.5rem;
@@ -407,6 +412,7 @@ button:hover {
         display: inline;
         margin: 0;
     }
+    
 }
 
 .icon {
