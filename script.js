@@ -20,3 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function showPriceList(imageSrc) {
+    var modal = document.getElementById("priceModal");
+    var modalImg = document.getElementById("priceImage");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+}
+
+function closePriceList() {
+    var modal = document.getElementById("priceModal");
+    modal.style.display = "none";
+}
+
+// Close the modal when clicking anywhere outside the image
+window.onclick = function(event) {
+    var modal = document.getElementById("priceModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
