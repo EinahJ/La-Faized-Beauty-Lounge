@@ -349,6 +349,33 @@ button:hover {
     margin-left: 10px; /* Adjust spacing between icons */
 }
 
+.custom-price-icon, .custom-booking-icon {
+    position: relative;
+    top: 52px;
+    display: inline-block;
+    background-color: #bbb;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-right: 5px;
+    width: 15px;
+}
+
+.custom-booking-icon {
+    top: 20px;
+    left: 45px;
+}
+
+.custom-price-icon:hover, .custom-booking-icon:hover {
+    background-color: #666; /* Adjust color on hover */
+    color: 000;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -430,6 +457,34 @@ button:hover {
     left: 10px;
 }
 
+.custom-price-tag {
+    width: 10%;
+    height: 40px;
+    background-color: #e74c3c;
+    position: absolute;
+    clip-path: polygon(0% 0%, 85% 0%, 100% 45%, 85% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    right: 10px; /* Adjust as needed */
+    bottom: 20px; /* Adjust as needed */
+}
+
+.custom-price-tag::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
 .service-info h3 {
     margin-top: 0;
     color: #D36D7E;
@@ -447,6 +502,7 @@ button:hover {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -458,7 +514,7 @@ button:hover {
 }
 
 .image {
-    height: 200px;
+    height: 270px;
 }
 
 .text {
@@ -469,7 +525,7 @@ button:hover {
     justify-content: center;
     color: #666;
     text-align: left;
-    background-color: #f5e9e7;
+    background-color: #fff;
 }
 
 .icon {
