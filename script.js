@@ -41,3 +41,33 @@ window.onclick = function(event) {
     }
 }
 
+
+function showModal() {
+    document.getElementById('certificateModal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('certificateModal').style.display = 'none';
+}
+
+function showModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+    var certificateModal = document.getElementById('certificateModal');
+    var locationModal = document.getElementById('locationModal');
+    
+    if (event.target == certificateModal) {
+        certificateModal.style.display = 'none';
+    }
+    
+    if (event.target == locationModal) {
+        locationModal.style.display = 'none';
+    }
+}
