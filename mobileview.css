@@ -130,34 +130,6 @@
     }
 }
 
-@media (max-width: 904px) {
-
-    .custom-price-tag {
-        width: 15%;
-    }
-
-    .profile-pic {
-        width: 300px;
-        height: 300px;
-    }
-
-    .contact-button {
-        width: 50%;
-    }
-
-    .certificates-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px; /* Adjust space between images */
-    }
-
-    .cert-modal-content {
-        max-width: 500px;
-    }
-
-}
-
 @media (max-width: 480px) {
 
     .container {
@@ -253,12 +225,18 @@
     .home-image p {
         font-size: 13px;
         margin-bottom: 1.5rem;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .contact-info p {
         margin: 0;
         font-size: 10px;
         font-family: 'Playfair Display', serif;
+    }
+
+    .contacts {
+        margin-left: 10px;
     }
 
     nav ul {
@@ -297,22 +275,21 @@
     }
 
     .profile-pic {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         margin-top: -50px;
         margin-bottom: -200px;
-        margin-right: -200px;
+        margin-right: -150px;
     }
 
     .right-panel {
         width: 100%;
         padding: 10px;
     }
-
-    .right-panel p {
-        font-size: 16px;
-        color: #bbb;
-        margin-right: 30px;
+    
+    .right-panel h2 {
+        font-size: 1.5rem;
+        margin-left: 10px;
     }
 
     .right-panel h2 {
@@ -320,9 +297,10 @@
     }
 
     .contact-button {
-        width: 30%;
+        width: 40%;
         padding: 8px;
         font-size: 0.9rem;
+        margin-left: 10px;
     }
 
     .cert-modal-content {
@@ -362,4 +340,5 @@
         margin-left: 20px;
         text-align: left;
     }
+   
 }
