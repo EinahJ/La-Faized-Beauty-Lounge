@@ -272,6 +272,20 @@ button {
     align-items: center;
 }
 
+#services-2 {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.services-wrapper-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .service-item {
     background-color: #fff;
     width: 300px;
@@ -581,6 +595,32 @@ button {
     font-size: 1.5rem;
 }
 
+.scroll-btn2 {
+    display: none;
+}
+
+.scroll-btn2:hover {
+    opacity: 1; /* Full opacity on hover */
+    background-color: #666;
+    color: white; /* Ensure text color stays white on hover */
+}
+
+.scroll-btn2.left-btn {
+    left: 0;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.scroll-btn2.right-btn {
+    right: 0;
+    margin-right: 5px;
+    width: 30px;
+}
+
+.scroll-btn2 i {
+    font-size: 1.5rem;
+}
+
 #portfolio {
     display: flex;
     justify-content: center;
@@ -643,12 +683,14 @@ button {
 .right-panel p {
     font-size: 1.2rem;
     color: #bbb;
+    text-align: left;
 }
 
 .right-panel h2 {
     font-size: 3rem;
     margin: 10px 0;
     color: #bbb;
+    text-align: left;
 }
 
 .right-panel h2 span {
@@ -671,7 +713,7 @@ button {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    width: 18%;
+    width: 20%;
 }
 
 .contact-button span {
