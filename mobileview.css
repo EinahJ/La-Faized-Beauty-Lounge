@@ -129,6 +129,46 @@
         padding: 10px;
         font-size: 1rem;
     }
+    
+    .scroll-btn2 {
+        display: block;
+    }
+
+    .scroll-btn2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Initial faded background */
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0.5; /* Initial opacity */
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+    
+    .scroll-btn2:hover {
+        opacity: 1; /* Full opacity on hover */
+        background-color: #666;
+        color: white; /* Ensure text color stays white on hover */
+    }
+    
+    .scroll-btn2.left-btn {
+        left: 0;
+        margin-left: 5px;
+        width: 30px;
+    }
+    
+    .scroll-btn2.right-btn {
+        right: 0;
+        margin-right: 5px;
+        width: 30px;
+    }
+    
+    .scroll-btn2 i {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -309,6 +349,42 @@
         max-width: 300px;
     }
 
+    .scroll-btn2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Initial faded background */
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0.5; /* Initial opacity */
+        transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+    
+    .scroll-btn2:hover {
+        opacity: 1; /* Full opacity on hover */
+        background-color: #666;
+        color: white; /* Ensure text color stays white on hover */
+    }
+    
+    .scroll-btn2.left-btn {
+        left: 0;
+        margin-left: 5px;
+        width: 30px;
+    }
+    
+    .scroll-btn2.right-btn {
+        right: 0;
+        margin-right: 5px;
+        width: 30px;
+    }
+    
+    .scroll-btn2 i {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -341,6 +417,5 @@
         margin-left: 20px;
         text-align: left;
     }
-
     
 }
