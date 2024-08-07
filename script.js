@@ -8,6 +8,16 @@ function scrollRight() {
     serviceList.scrollBy({ left: 300, behavior: 'smooth' });
 }
 
+function scrollLeftBySection2() {
+    const serviceList = document.querySelector('.service-list-2');
+    serviceList.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollRightSection2() {
+    const serviceList = document.querySelector('.service-list-2');
+    serviceList.scrollBy({ left: 300, behavior: 'smooth' });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('seeMoreButton').addEventListener('click', function() {
         var hiddenServices = document.getElementById('hiddenServices');
