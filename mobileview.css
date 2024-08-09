@@ -169,6 +169,15 @@
     .scroll-btn2 i {
         font-size: 1.5rem;
     }
+
+    .h4sl {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 47px;
+    }
+    
+    
 }
 
 @media (max-width: 480px) {
@@ -385,6 +394,15 @@
         font-size: 1.5rem;
     }
 
+    .h4sl {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    
+    
+
 }
 
 @media (max-width: 320px) {
@@ -417,5 +435,11 @@
         margin-left: 20px;
         text-align: left;
     }
-    
+
+    .h4sl {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 35px;
+    } 
 }
