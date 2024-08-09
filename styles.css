@@ -237,6 +237,13 @@ button {
     margin-top: 10px;
 }
 
+.h4sl {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 47px;
+}
+
 .h4s::before,
 .h4s::after {
     content: '';
@@ -261,7 +268,6 @@ button {
 }
 
 #services {
-    padding: 2rem;
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -270,14 +276,14 @@ button {
     position: relative;
     display: flex;
     align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #services-2 {
     padding: 2rem;
     text-align: center;
     background-color: #f8f8f8;
-    margin-left: -30px;
-    margin-right: -30px;
 }
 
 .services-wrapper-2 {
@@ -323,7 +329,7 @@ button {
     text-align: center;
 }
 
-.price-icon, .booking-icon {
+.price-icon, .booking-icon, .flip-icon {
     position: absolute;
     bottom: -40px;
     left: 30px;
@@ -354,7 +360,7 @@ button {
     margin: 0;
 }
 
-.custom-price-icon, .custom-booking-icon {
+.custom-price-icon, .custom-booking-icon, .custom-flip-icon {
     position: relative;
     top: 62px;
     display: inline-block;
@@ -376,9 +382,24 @@ button {
     left: 45px;
 }
 
-.custom-price-icon:hover, .custom-booking-icon:hover {
+.custom-flip-icon {
+    top: -1px;
+    left: 93px;
+}
+
+.custom-price-icon:hover, .custom-booking-icon:hover, .custom-flip-icon:hover {
     background-color: #fcd5ce; /* Adjust color on hover */
     color: #666;
+}
+
+#info-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+#info-description {
+    font-size: 14px;
+    margin-bottom: 1rem;
 }
 
 .modal {
@@ -502,6 +523,7 @@ button {
     text-align: center;
 }
 
+
 #hiddenServices {
     display: none;
 }
@@ -519,7 +541,7 @@ button {
 }
 
 .image {
-    height: 270px;
+    height: 350px;
 }
 
 .text {
