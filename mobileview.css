@@ -226,7 +226,7 @@
     }
 
     .custom-price-tag {
-        width: 50%;
+        width: 45%;
     }
 
     .h4s {
@@ -409,9 +409,7 @@
         text-align: left;
         margin-top: 10px;
         margin-left: 35px;
-    }
-    
-    
+    }   
 
 }
 
@@ -451,5 +449,5 @@
         text-align: left;
         margin-top: 10px;
         margin-left: 35px;
-    }    
+    }   
 }
