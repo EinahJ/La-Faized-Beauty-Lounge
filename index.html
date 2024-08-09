@@ -57,7 +57,7 @@
 
     <section id="services">
         <h2 class="h2s">Our Services</h2>
-        <h4 class="h4s">Lashes Sets</h4>
+        <h4 class="h4sl">Lashes Sets</h4>
         <div class="services-wrapper">
             <button class="scroll-btn left-btn" onclick="scrollLeftBy()"><i class="fas fa-chevron-left"></i></button>
             <div class="service-list">
@@ -436,80 +436,105 @@
         </div>
         
         <h4 class="n4s">Nails Sets</h4>
-        <div class="container">
-            <img src="img/elite-gelpolish.jpg" alt="Elite Gel Polish" class="image">
+        <div class="container" id="container-elite-gelpolish" data-state="original">
+            <img id="info-image" src="img/elite-gelpolish.jpg" alt="Elite Gel Polish" class="image">
             <div class="text">
-                <h1>Elite LAGDAI Gel Polish</h1>
-                <p>Experience the ultimate in nail care with Elite LAGDAI Gel Polish. This high-shine, long-lasting polish is designed to stay chip-resistant for weeks, providing a salon-quality finish that keeps your nails looking impeccable.</p>
+                <h1 id="info-title">Elite LAGDAI Gel Polish</h1>
+                <p id="info-description">Experience the ultimate in nail care with Elite LAGDAI Gel Polish. This high-shine, long-lasting polish is designed to stay chip-resistant for weeks, providing a salon-quality finish that keeps your nails looking impeccable.</p>
                 <a href="#" class="custom-price-icon" onclick="showPriceList('img/elite-gelpolish.jpg'); return false;">
-                    <i class="fa fa-search-plus"></i> <!-- Zoom icon -->
+                    <i class="fa fa-search-plus"></i>
                 </a>
                 <a href="https://calendly.com/lafaized/lafaized-official-appointmentsetter?fbclid=IwZXh0bgNhZW0CMTEAAR0q1r0Z2Xs5vmb1qMYZgY7N12X9ZJu0M7Xb6sqc-9fZf8mNP8c5yFsdQTA_aem_YRN049qQYj7fKLMqZc42RA&back=1&month=2024-07" class="custom-booking-icon">
-                    <i class="fa fa-calendar-check"></i> <!-- Booking icon -->
+                    <i class="fa fa-calendar-check"></i>
                 </a>
-                <div class="custom-price-tag">₱800.00</div>
+                <a href="#" class="custom-flip-icon" onclick="changeInfo('container-elite-gelpolish'); return false;">
+                    <i class="fa fa-reply"></i></i>
+                </a>
+                <div class="custom-price-tag" id="price-tag">₱800.00</div>
             </div>
-        </div>
+        </div>     
 
-        <div class="container">
-            <img src="img/softgel-extension.jpg" alt="Softgel Extension" class="image">
+        <div class="container" id="container-softgel-extension" data-state="original">
+            <img id="info-image" src="img/softgel-extension.jpg" alt="Softgel Extension" class="image">
             <div class="text">
-                <h1>Softgel Extension</h1>
-                <p>Get the perfect blend of flexibility and durability with our Softgel Extensions. These natural-looking enhancements provide a strong yet gentle alternative to traditional nail extensions, ensuring your nails remain beautiful and healthy.                </p>
+                <h1 id="info-title">Softgel Extension</h1>
+                <p id="info-description">
+                    Get the perfect blend of flexibility and durability with our Softgel Extensions. These natural-looking enhancements provide a strong yet gentle alternative to traditional nail extensions, ensuring your nails remain beautiful and healthy.
+                </p>
                 <a href="#" class="custom-price-icon" onclick="showPriceList('img/softgel-extension.jpg'); return false;">
                     <i class="fa fa-search-plus"></i> <!-- Zoom icon -->
                 </a>
                 <a href="https://calendly.com/lafaized/lafaized-official-appointmentsetter?fbclid=IwZXh0bgNhZW0CMTEAAR0q1r0Z2Xs5vmb1qMYZgY7N12X9ZJu0M7Xb6sqc-9fZf8mNP8c5yFsdQTA_aem_YRN049qQYj7fKLMqZc42RA&back=1&month=2024-07" class="custom-booking-icon">
                     <i class="fa fa-calendar-check"></i> <!-- Booking icon -->
                 </a>
-                <div class="custom-price-tag">₱1,000.00</div>
+                <a href="#" class="custom-flip-icon" onclick="changeInfo('container-softgel-extension'); return false;">
+                    <i class="fa fa-reply"></i></i> <!-- Flip icon -->
+                </a>
+                <div class="custom-price-tag" id="price-tag">₱1,000.00</div>
             </div>
         </div>
-
-        <div class="container">
-            <img src="img/pinterest-inspo.jpg" alt="Pinterest Inspo" class="image">
+        
+        <div class="container" id="container-pinterest-inspo" data-state="original">
+            <img id="info-image" src="img/pinterest-inspo.jpg" alt="Pinterest Inspo" class="image">
             <div class="text">
-                <h1>Customized Pinterest Inspo</h1>
-                <p>Bring your dream nails to life with our Customized Pinterest Inspo service. Whether you have a specific design in mind or need help choosing, our talented nail artists will create unique and trendy designs tailored to your personal style.                </p>
+                <h1 id="info-title">Customized Pinterest Inspo</h1>
+                <p id="info-description">
+                    Bring your dream nails to life with our Customized Pinterest Inspo service. Whether you have a specific design in mind or need help choosing, our talented nail artists will create unique and trendy designs tailored to your personal style.
+                </p>
                 <a href="#" class="custom-price-icon" onclick="showPriceList('img/pinterest-inspo.jpg'); return false;">
                     <i class="fa fa-search-plus"></i> <!-- Zoom icon -->
                 </a>
                 <a href="https://calendly.com/lafaized/lafaized-official-appointmentsetter?fbclid=IwZXh0bgNhZW0CMTEAAR0q1r0Z2Xs5vmb1qMYZgY7N12X9ZJu0M7Xb6sqc-9fZf8mNP8c5yFsdQTA_aem_YRN049qQYj7fKLMqZc42RA&back=1&month=2024-07" class="custom-booking-icon">
                     <i class="fa fa-calendar-check"></i> <!-- Booking icon -->
                 </a>
-                <div class="custom-price-tag">₱1,500.00</div>
+                <a href="#" class="custom-flip-icon" onclick="changeInfo('container-pinterest-inspo'); return false;">
+                    <i class="fa fa-reply"></i></i> <!-- Flip icon -->
+                </a>
+                <div class="custom-price-tag" id="price-tag">₱1,500.00</div>
             </div>
         </div>
+           
 
-        <div class="container">
-            <img src="img/elite-press-nails.jpg" alt="Elite Press on Nails" class="image">
+        <div class="container" id="container-elite-press-nails" data-state="original">
+            <img id="info-image" src="img/elite-press-nails.jpg" alt="Elite Press on Nails" class="image">
             <div class="text">
-                <h1>Elite Press on Nails</h1>
-                <p>Achieve salon-quality nails in minutes with our Elite Press on Nails. These stylish and reusable nails are perfect for those who want a quick and easy nail solution without compromising on elegance and quality.                </p>
+                <h1 id="info-title">Elite Press on Nails</h1>
+                <p id="info-description">
+                    Achieve salon-quality nails in minutes with our Elite Press on Nails. These stylish and reusable nails are perfect for those who want a quick and easy nail solution without compromising on elegance and quality.
+                </p>
                 <a href="#" class="custom-price-icon" onclick="showPriceList('img/elite-press-nails.jpg'); return false;">
                     <i class="fa fa-search-plus"></i> <!-- Zoom icon -->
                 </a>
                 <a href="https://calendly.com/lafaized/lafaized-official-appointmentsetter?fbclid=IwZXh0bgNhZW0CMTEAAR0q1r0Z2Xs5vmb1qMYZgY7N12X9ZJu0M7Xb6sqc-9fZf8mNP8c5yFsdQTA_aem_YRN049qQYj7fKLMqZc42RA&back=1&month=2024-07" class="custom-booking-icon">
                     <i class="fa fa-calendar-check"></i> <!-- Booking icon -->
                 </a>
-                <div class="custom-price-tag">₱1,500.00</div>
+                <a href="#" class="custom-flip-icon" onclick="changeInfo('container-elite-press-nails'); return false;">
+                    <i class="fa fa-reply"></i></i> <!-- Flip icon -->
+                </a>
+                <div class="custom-price-tag" id="price-tag">₱1,500.00</div>
             </div>
         </div>
-
-        <div class="container">
-            <img src="img/russian-manicure.jpg" alt="Elite Press on Nails" class="image">
+        
+        <div class="container" id="container-russian-manicure" data-state="original">
+            <img id="info-image" src="img/russian-manicure.jpg" alt="Russian Manicure + BIAP" class="image">
             <div class="text">
-                <h1>Russian Manicure + BIAP</h1>
-                <p>Indulge in the precision and elegance of a Russian Manicure combined with BIAP treatment. This service strengthens your nails with a durable base while providing a flawless, polished finish.                </p>
+                <h1 id="info-title">Russian Manicure + BIAP</h1>
+                <p id="info-description">
+                    Indulge in the precision and elegance of a Russian Manicure combined with BIAP treatment. This service strengthens your nails with a durable base while providing a flawless, polished finish.
+                </p>
                 <a href="#" class="custom-price-icon" onclick="showPriceList('img/russian-manicure.jpg'); return false;">
                     <i class="fa fa-search-plus"></i> <!-- Zoom icon -->
                 </a>
                 <a href="https://calendly.com/lafaized/lafaized-official-appointmentsetter?fbclid=IwZXh0bgNhZW0CMTEAAR0q1r0Z2Xs5vmb1qMYZgY7N12X9ZJu0M7Xb6sqc-9fZf8mNP8c5yFsdQTA_aem_YRN049qQYj7fKLMqZc42RA&back=1&month=2024-07" class="custom-booking-icon">
                     <i class="fa fa-calendar-check"></i> <!-- Booking icon -->
                 </a>
-                <div class="custom-price-tag">₱1,500.00</div>
+                <a href="#" class="custom-flip-icon" onclick="changeInfo('container-russian-manicure'); return false;">
+                    <i class="fa fa-reply"></i></i> <!-- Flip icon -->
+                </a>
+                <div class="custom-price-tag" id="price-tag">₱1,500.00</div>
             </div>
         </div>
+        
 
         <button id="seeMoreButton">Other Services</button>
         <div id="hiddenServices">
